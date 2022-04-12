@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "34d33850-45b2-40de-8366-0e025e1f8228",
+		"name": "Todolist Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://intense-shore-30035.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"intense-shore-30035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"test3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intense-shore-30035.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"intense-shore-30035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All Todos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://intense-shore-30035.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"intense-shore-30035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete One Todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://intense-shore-30035.herokuapp.com/todos/5f04d01e-7a8b-42cb-a851-1e5bbf268ea1",
+					"protocol": "https",
+					"host": [
+						"intense-shore-30035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"5f04d01e-7a8b-42cb-a851-1e5bbf268ea1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch One Todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"test-qqq\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intense-shore-30035.herokuapp.com/todos/dd751c04-7a69-4fcd-aa0a-c4d179128956",
+					"protocol": "https",
+					"host": [
+						"intense-shore-30035",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"dd751c04-7a69-4fcd-aa0a-c4d179128956"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
